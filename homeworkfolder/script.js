@@ -116,7 +116,7 @@ class Footer {
     this.inputSpecies = document.getElementById("pet-species");
     this.name = this.inputName.value;
     this.species = this.inputSpecies.value;
-    this.keys = ["lili", "yh", "clilingy", "clingyh"];
+    this.keys = ["lili", "callista", "ayano", "sunday", "sinclair"];
   }
   ToggleAge() {
     let tempAge = (this.btnAge.innerHTML === "Adult") ? "Chick" : "Adult";
@@ -128,10 +128,9 @@ class Footer {
   ConstructPenguin() {
     // check for keys
     if (this.CheckForKey(this.name)) {
-      window.location.href = 'dev/welcome.html';
+      window.location.href = 'homeworkfolder/welcome.html';
       return;
     }
-
 
     let filepath = "homeworkfolder/images/spr-" + this.species;
     if (this.age === "Chick") filepath += "-chick";
